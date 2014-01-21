@@ -1,0 +1,26 @@
+Index: bntools/src/bnfos.c
+===================================================================
+--- bntools.orig/src/bnfos.c
++++ bntools/src/bnfos.c
+@@ -26,8 +26,6 @@
+ #include <string.h>
+ 
+ #include <curl/curl.h>
+-#include <curl/types.h>
+-#include <curl/easy.h>
+ 
+ #include <beronet/bnfos.h>
+ #include <beronet/confmap_fos.h>
+Index: bntools/src/bnrps.c
+===================================================================
+--- bntools.orig/src/bnrps.c
++++ bntools/src/bnrps.c
+@@ -26,8 +26,6 @@
+ #include <string.h>
+ 
+ #include <curl/curl.h>
+-#include <curl/types.h>
+-#include <curl/easy.h>
+ 
+ #include <beronet/bnrps.h>
+ #include <beronet/confmap_rps.h>

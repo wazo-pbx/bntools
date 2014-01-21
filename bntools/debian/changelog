@@ -1,0 +1,29 @@
+bntools (1:20080418+pf.xivo.14.01~20140110.164911.03a9dcd-wheezy-2) xivo-dev; urgency=low
+
+  * trying to fix the pf.xivo to xivo package name change
+
+ -- Pascal Cadotte Michaud <pcadottemichaud@avencall.com>  Tue, 14 Jan 2014 14:29:22 -0500
+
+bntools (1:20080418+pf.xivo.1.1.9~svn9143-0) lenny-xivo-gallifrey-dev; urgency=low
+
+  * first official build for xivo
+
+ -- Nicolas HICHER (atarakt) <nhicher@proformatique.com>  Wed, 22 Dec 2010 09:21:32 +0100
+
+bntools (1:20080418+pf.xivo.1.1.4~svn9143-3) lenny-xivo-gallifrey-dev; urgency=low
+
+  * Removed gnutls.
+
+ -- Sylvain Boily <sboily@proformatique.com>  Fri, 10 Sep 2010 17:05:30 -0400
+
+bntools (1:20080418+pf.xivo.1.1.4~svn9143-2) lenny-xivo-gallifrey-dev; urgency=low
+
+  * Added libcurl4-openssl-dev on dependences.
+
+ -- Sylvain Boily <sboily@proformatique.com>  Fri, 10 Sep 2010 17:02:23 -0400
+
+bntools (1:20080418+pf.xivo.1.1.4~svn9143-0) lenny-xivo-gallifrey-dev; urgency=low
+
+  * Initial release.
+
+ -- Sylvain Boily <sboily@proformatique.com>  Thu, 09 Sep 2010 15:00:20 -0400

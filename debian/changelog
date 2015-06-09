@@ -1,3 +1,9 @@
+bntools (1:20141216+xivo.15.11~20150609.115308.b1eba060-wheezy-1) xivo-dev; urgency=medium
+
+  * Use the latest bntools
+
+ -- Sylvain Boily <quintana@quintana>  Tue, 09 Jun 2015 12:53:01 -0400
+
 bntools (1:20080418+xivo.15.11~20150608.164045.14f2077-wheezy-5) xivo-dev; urgency=medium
 
   * Use uscan

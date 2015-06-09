@@ -1,0 +1,40 @@
+#!/bin/sh
+
+ASTERISK=`which asterisk`
+SAFE_ASTERISK_FOS=`which safe_asterisk_fos`
+
+function start
+{
+	if echo "$(ps ax)x" | grep safe_asterisk_fos | grep -v grep > /dev/null; then
+		echo "Already running."
+	else
+		echo "Starting safe_asterisk_fos"
+		$SAFE_ASTERISK_FOS
+	fi
+}
+
+function stop
+{
+	if echo "$(ps ax)x" | grep safe_asterisk_fos | grep -v grep > /dev/null; then
+		echo "Stopping safe_asterisk_fos"
+		$ASTERISK -rx "stop now"
+	else
+		echo "Not running."
+	fi
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		stop
+		start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		;;
+esac

@@ -1,7 +1,7 @@
 Index: bntools/src/bnfos.c
 ===================================================================
---- bntools.orig/src/bnfos.c
-+++ bntools/src/bnfos.c
+--- bntools.orig/src/bnfos.c	2015-06-08 21:36:04.142774246 -0400
++++ bntools/src/bnfos.c	2015-06-08 21:36:07.186776617 -0400
 @@ -26,8 +26,6 @@
  #include <string.h>
  
@@ -13,8 +13,8 @@ Index: bntools/src/bnfos.c
  #include <beronet/confmap_fos.h>
 Index: bntools/src/bnrps.c
 ===================================================================
---- bntools.orig/src/bnrps.c
-+++ bntools/src/bnrps.c
+--- bntools.orig/src/bnrps.c	2015-06-08 21:36:04.142774246 -0400
++++ bntools/src/bnrps.c	2015-06-08 21:36:07.190776620 -0400
 @@ -26,8 +26,6 @@
  #include <string.h>
  

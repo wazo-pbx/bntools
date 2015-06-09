@@ -1,8 +1,8 @@
 to build only bnfos, remove asterisk module
 Index: bntools/Makefile
 ===================================================================
---- bntools.orig/Makefile	2012-03-28 13:24:26.329336897 -0400
-+++ bntools/Makefile	2012-03-28 13:25:44.057539874 -0400
+--- bntools.orig/Makefile	2008-04-18 05:00:36.000000000 -0400
++++ bntools/Makefile	2015-06-08 20:33:23.304375580 -0400
 @@ -1,50 +1,17 @@
  all:
  	make -C src $@ DESTDIR=$(DESTDIR)

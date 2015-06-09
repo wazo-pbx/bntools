@@ -1,13 +1,21 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
+# GNU copyright 1997 to 1999 by Joey Hess.
 
 # Uncomment this to turn on verbose mode.
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/patchsys-quilt.mk
-include /usr/share/cdbs/1/class/makefile.mk
-DEB_MAKE_CLEAN_TARGET   = clean
-DEB_MAKE_BUILD_TARGET   = all
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(CURDIR)/debian/
-DEB_MAKE_INVOKE = $(DEB_MAKE_ENVVARS) make -C $(DEB_BUILDDIR)/
+PKG_VER_ORIG = "20080418"
+PKD  = $(abspath $(dir $(MAKEFILE_LIST)))
+PKG  = $(word 2,$(shell dpkg-parsechangelog | grep Source))
+VER ?= $(shell dpkg-parsechangelog | grep Version: | awk -F': ' '{print $$NF}' | sed -ne 's/^\(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+
+%:
+	dh $@
+
+.PHONY: get-orig-source
+
+get-orig-source:
+	@echo "# Downloading..."
+	uscan --noconf --rename --check-dirname-level=0 --force-download --download-version $(PKG_VER_ORIG) $(PKD)
+	mv ../$(PKG)_$(PKG_VER_ORIG).orig.tar.gz ../$(PKG)_$(VER).orig.tar.gz

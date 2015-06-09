@@ -5,8 +5,6 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-PKG_VER_ORIG = "20080418"
-PKD  = $(abspath $(dir $(MAKEFILE_LIST)))
 PKG  = $(word 2,$(shell dpkg-parsechangelog | grep Source))
 VER ?= $(shell dpkg-parsechangelog | grep Version: | awk -F': ' '{print $$NF}' | sed -ne 's/^\(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
@@ -17,5 +15,4 @@ VER ?= $(shell dpkg-parsechangelog | grep Version: | awk -F': ' '{print $$NF}' |
 
 get-orig-source:
 	@echo "# Downloading..."
-	uscan --noconf --rename --check-dirname-level=0 --force-download --download-version $(PKG_VER_ORIG) $(PKD)
-	mv ../$(PKG)_$(PKG_VER_ORIG).orig.tar.gz ../$(PKG)_$(VER).orig.tar.gz
+	wget -nv -T10 -t3 http://www.beronet.com/downloads/docs/berofos/bntools.tar.gz -O ../$(PKG)_$(VER).orig.tar.gz

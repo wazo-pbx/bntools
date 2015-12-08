@@ -1,3 +1,9 @@
+bntools (1:20141216+xivo.15.20~20151208.182312-1) xivo-dev; urgency=medium
+
+  * Update Jessie
+
+ -- Francois Blackburn <fblackburn@avencall.com>  Tue, 08 Dec 2015 13:23:12 -0500
+
 bntools (1:20141216+xivo.15.11~20150609.115308.b1eba060-wheezy-1) xivo-dev; urgency=medium
 
   * Use the latest bntools

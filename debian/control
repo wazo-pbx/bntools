@@ -1,10 +1,9 @@
 Source: bntools
 Section: comm
 Priority: optional
-Maintainer: XiVO Dev Team <dev@avencall.com>
-Build-Depends: cdbs, debhelper (>= 7.0.1), libcurl4-openssl-dev, quilt
-Standards-Version: 3.7.3
-Homepage: http://www.beronet.com/
+Maintainer: Wazo Maintainers <dev.wazo@gmail.com>
+Build-Depends: debhelper (>= 7.0.1), libcurl4-openssl-dev
+Standards-Version: 3.9.6
 
 Package: bntools
 Architecture: any

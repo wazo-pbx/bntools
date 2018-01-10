@@ -1,3 +1,9 @@
+bntools (1:20161129-1~wazo3) wazo-dev-stretch; urgency=medium
+
+  * update to stretch
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 10 Jan 2018 10:19:17 -0500
+
 bntools (1:20161129-1~wazo2) wazo-dev; urgency=medium
 
   * update version

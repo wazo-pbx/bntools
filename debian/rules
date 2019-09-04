@@ -1,5 +1,6 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
+# Copyright 2014-2019 The Wazo Authors  (see the AUTHORS file)
 # GNU copyright 1997 to 1999 by Joey Hess.
 
 # Uncomment this to turn on verbose mode.
@@ -17,4 +18,4 @@ VER ?= $(shell dpkg-parsechangelog | grep Version: | awk -F': ' '{print $$NF}' |
 
 get-orig-source:
 	@echo "# Downloading..."
-	wget -nv -T10 -t3 http://www.beronet.com/downloads/docs/berofos/bntools.tar.gz -O ../$(PKG)_$(VER).orig.tar.gz
+	wget -nv -T10 -t3 http://www.beronet.com/wp-content/uploads/downloads/berofos/bntools.tar.gz -O ../$(PKG)_$(VER).orig.tar.gz

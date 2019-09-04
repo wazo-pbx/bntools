@@ -1,3 +1,9 @@
+bntools (1:20190904-1~wazo1) wazo-dev-buster; urgency=medium
+
+  * update version (URL changed)
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 04 Sep 2019 16:49:46 -0400
+
 bntools (1:20161129-1~wazo3) wazo-dev-stretch; urgency=medium
 
   * update to stretch

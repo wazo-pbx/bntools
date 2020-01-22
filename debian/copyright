@@ -1,24 +1,10 @@
-This package was debianized by Sylvain Boily <sboily@proformatique.com> on
-Tue, 03 Aug 2010 18:40:13 +0200.
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: bntools
+Source: http://www.beronet.com/component/option,com_remository/Itemid,38/func,fileinfo/filecatid,27/parent,category/lang,en/
 
-It was downloaded from http://www.beronet.com/component/option,com_remository/Itemid,38/func,fileinfo/filecatid,27/parent,category/lang,en/
+Files: *
+Copyright: Copyright (C) 2006, beroNet GmbH
+License: GPL-2
 
-Upstream Author(s):
-
-    Thomas Liske <thomas.liske@beronet.com>
-
-Copyright:
-
-    Copyright (C) 2006, beroNet GmbH
-
-License:
-
-     This program is free software, distributed under the terms of
-     the GNU General Public License Version 2. See the LICENSE file
-     at the top of the source tree.
-
-The Debian packaging is (C) 2010, Sylvain Boily <sboily@proformatique.com> and
-is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
-
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
+Files: debian/*
+License: GPL-3

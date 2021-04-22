@@ -1,3 +1,9 @@
+bntools (1:20190904-1~wazo3) wazo-dev-buster; urgency=medium
+
+  * check CI
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Thu, 22 Apr 2021 08:52:46 -0400
+
 bntools (1:20190904-1~wazo2) wazo-dev-buster; urgency=medium
 
   * rebuild
